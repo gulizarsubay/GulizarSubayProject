@@ -1,0 +1,232 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3031354414,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the home page",
+            "match": {
+              "location": "SigninDefs.the_user_is_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 944570646,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user click to sign in button",
+            "match": {
+              "location": "SigninDefs.the_user_click_to_sign_in_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-04T21:43:33.517Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1619449122,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "User should able to login with valid credentials",
+        "description": "",
+        "id": "login;user-should-able-to-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 124197889,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3518396519,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user logs in with valid information \"username\" \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 51
+                }
+              ],
+              "location": "SigninDefs.the_user_logs_in_with_valid_information(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33748266,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user login the account successfully and see his name",
+            "match": {
+              "location": "SigninDefs.the_user_login_the_account_successfully_and_see_his_name()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3247431549,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the home page",
+            "match": {
+              "location": "SigninDefs.the_user_is_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1994634071,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user click to sign in button",
+            "match": {
+              "location": "SigninDefs.the_user_click_to_sign_in_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-04T21:43:42.825Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1105905998,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "User should not able to login with invalid credentials",
+        "description": "",
+        "id": "login;user-should-not-able-to-login-with-invalid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 107203929,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1235482493,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user logs in with invalid information \"username\" \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 53
+                }
+              ],
+              "location": "SigninDefs.the_user_logs_in_with_invalid_information(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28301703,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user should see an error message",
+            "match": {
+              "location": "SigninDefs.the_user_should_see_an_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/signin.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
