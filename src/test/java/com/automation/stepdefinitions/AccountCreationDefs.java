@@ -53,7 +53,6 @@ public class AccountCreationDefs {
 
         Assert.assertEquals(accountPage.welcomeMessage.getText(), "Welcome to your account. Here you can manage all of your personal information and orders.");
 
-
     }
 
 
